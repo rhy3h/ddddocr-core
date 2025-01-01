@@ -1,1 +1,1 @@
-# ddddocr-core
+# DdddOcr Core
