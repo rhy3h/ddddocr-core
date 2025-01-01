@@ -1,5 +1,5 @@
-const { DetectionBase } = require('./DetectionBase');
-const { CHARSET_RANGE, OCRBase } = require('./OcrBase');
+const { DetectionBase } = require('./src/DetectionBase');
+const { CHARSET_RANGE, OCRBase } = require('./src/OcrBase');
 const { drawRectangle } = require('./utils/image-utils');
 
 module.exports = {

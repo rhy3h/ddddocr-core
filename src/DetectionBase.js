@@ -1,9 +1,9 @@
 const tf = require('@tensorflow/tfjs');
 const { Jimp } = require('jimp');
 
-const { argSort } = require('./utils/array-utils');
+const { argSort } = require('../utils/array-utils');
 
-const { tensorflowToImage, arrayToImage } = require('./utils/debug-utils');
+const { tensorflowToImage, arrayToImage } = require('../utils/debug-utils');
 
 class DetectionBase {
     /**
