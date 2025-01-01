@@ -1,5 +1,7 @@
 # DdddOcr Core
 
+[![npm](https://img.shields.io/npm/v/ddddocr-core.svg)](https://www.npmjs.com/package/ddddocr-core)
+
 A part of the DdddOcr.js ecosystem, this repo hosts ddddocr-core, the DdddOcr.js Core API.
 
 Check out [Ddddocr Node](https://rhy3h.github.io/ddddocr-node/) for more information about the library, tutorials and API docs.
