@@ -1,5 +1,3 @@
-const fsm = require('node:fs/promises');
-
 const tf = require('@tensorflow/tfjs');
 const { Jimp } = require('jimp');
 
@@ -87,20 +85,6 @@ class OCRBase {
     constructor(onnxPath, charsetPath) {
         this._ocrOnnxPath = onnxPath;
         this._charsetPath = charsetPath;
-    }
-
-    /**
-     * Loads a character set from a specified file path.
-     * 
-     * @private
-     * @param {string} charsetPath - The file path to the character set. 
-     * @returns {Promise<string[]>}
-     */
-    async _loadCharset(charsetPath) {
-        return fsm.readFile(charsetPath, { encoding: 'utf-8' })
-            .then((result) => {
-                return JSON.parse(result);
-            });
     }
 
     /**
