@@ -1,6 +1,6 @@
 {
   "name": "ddddocr-core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The Core of DdddOcr-JS",
   "homepage": "https://github.com/rhy3h/ddddocr-core#readme",
   "bugs": {
@@ -26,7 +26,7 @@
     "@tensorflow/tfjs": "^4.22.0",
     "jimp": "^1.6.0"
   },
- "devDependencies": {
+  "devDependencies": {
     "jsdoc": "^4.0.4",
     "minami": "^1.2.3",
     "rimraf": "^6.0.1",
