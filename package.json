@@ -17,19 +17,18 @@
   ],
   "author": "rhy3h",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "rimraf docs && jsdoc --configure jsdoc.json --verbose"
+    "build": "rimraf dist && rimraf ./node_modules/.cache && npx tsc -b",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
     "jimp": "^1.6.0"
   },
   "devDependencies": {
-    "jsdoc": "^4.0.4",
-    "minami": "^1.2.3",
     "rimraf": "^6.0.1",
-    "taffydb": "^2.7.3"
+    "typescript": "^5.7.3"
   }
 }
