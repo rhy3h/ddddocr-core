@@ -48,6 +48,9 @@ const MIX_LOWER_NUM_CASE = LOWER_CASE + NUM_CASE;
 const MIX_UPPER_NUM_CASE = UPPER_CASE + NUM_CASE;
 const MIX_LOWER_UPPER_NUM_CASE = LOWER_CASE + UPPER_CASE + NUM_CASE;
 
+/**
+ * @ignore
+ */
 class OCRBase {
     /**
      * Path to the ONNX model for standard OCR.

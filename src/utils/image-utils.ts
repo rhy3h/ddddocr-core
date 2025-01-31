@@ -5,7 +5,10 @@ interface Point {
     y: number;
 }
 
-function drawRectangle(image: InstanceType<typeof Jimp>, points: Point[], color: number): void {
+/**
+ * @ignore
+ */
+function drawRectangle(image: any | InstanceType<typeof Jimp>, points: Point[], color: number): void {
     points.forEach(point => {
         image.setPixelColor(color, point.x, point.y);
     });
