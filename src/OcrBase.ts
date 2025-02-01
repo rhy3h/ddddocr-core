@@ -213,7 +213,7 @@ class OCRBase {
         return { floatData, targetHeight, targetWidth };
     }
 
-    protected async postProcess(cpuData: number[], dims: number[], charset: string[]): Promise<string> {
+    protected async postProcess(cpuData: Float32Array, dims: number[], charset: string[]): Promise<string> {
         const tensor = tf.tensor(cpuData);
         const reshapedTensor = tf.reshape(tensor, dims);
         const argmaxResult = tf.argMax(reshapedTensor, 2);
