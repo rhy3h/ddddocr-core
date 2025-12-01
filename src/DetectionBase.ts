@@ -1,8 +1,8 @@
 import tf from '@tensorflow/tfjs';
 import { Jimp } from 'jimp';
 
-import { argSort } from './utils/array-utils';
-import { tensorflowToImage, arrayToImage } from './utils/debug-utils';
+import { argSort } from './utils/array-utils.js';
+import { tensorflowToImage, arrayToImage } from './utils/debug-utils.js';
 
 /**
  * @ignore
